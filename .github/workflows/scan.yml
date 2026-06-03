@@ -20,6 +20,7 @@ jobs:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      BINANCE_PROXY: ${{ secrets.BINANCE_PROXY }}
       # Variables (configured in repo Settings → Variables)
       Z_SCORE_THRESHOLD: ${{ vars.Z_SCORE_THRESHOLD || '2.0' }}
       FUNDING_THRESHOLD_ANNUALIZED: ${{ vars.FUNDING_THRESHOLD_ANNUALIZED || '100' }}

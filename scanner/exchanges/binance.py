@@ -6,6 +6,8 @@ from typing import Any
 
 import requests
 
+from scanner import config
+
 logger = logging.getLogger(__name__)
 
 BASE_URL = "https://fapi.binance.com"
@@ -21,9 +23,11 @@ def _get(endpoint: str, params: dict | None = None, max_retries: int = 3) -> Any
     Raises on 418 (IP ban) or persistent failures.
     """
     url = f"{BASE_URL}{endpoint}"
+    proxies = {"http": config.BINANCE_PROXY, "https": config.BINANCE_PROXY} if config.BINANCE_PROXY else None
+    
     for attempt in range(max_retries):
         try:
-            resp = SESSION.get(url, params=params, timeout=15)
+            resp = SESSION.get(url, params=params, proxies=proxies, timeout=15)
             # Log weight usage
             used_weight = resp.headers.get("X-MBX-USED-WEIGHT-1m", "?")
             logger.debug(f"Binance weight used: {used_weight}/2400")

@@ -29,3 +29,8 @@ MIN_VOLUME_USD: float = float(os.environ.get("MIN_VOLUME_USD", "1000"))
 MAX_CANDLE_FETCHES: int = int(os.environ.get("MAX_CANDLE_FETCHES", "50"))
 # Delay between candle fetch requests (seconds)
 CANDLE_FETCH_DELAY: float = float(os.environ.get("CANDLE_FETCH_DELAY", "0.15"))
+
+# --- Proxies ---
+# Optional proxy URL (e.g. 'http://user:pass@ip:port') specifically for Binance
+# to bypass geo-blocking (US IPs).
+BINANCE_PROXY: str = os.environ.get("BINANCE_PROXY", "")

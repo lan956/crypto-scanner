@@ -57,6 +57,7 @@ Go to your repo → **Settings** → **Secrets and variables** → **Actions**
 | `TELEGRAM_BOT_TOKEN` | Bot token from @BotFather |
 | `TELEGRAM_CHAT_ID` | Channel ID (e.g., `-100xxxxxxxxxx`) |
 | `GEMINI_API_KEY` | Google AI Studio API key |
+| `BINANCE_PROXY` | Optional HTTP proxy (e.g. `http://user:pass@ip:port`) to bypass Binance US region blocks |
 
 #### Variables (optional — have defaults)
 
