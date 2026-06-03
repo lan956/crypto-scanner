@@ -25,7 +25,7 @@ jobs:
       FUNDING_THRESHOLD_ANNUALIZED: ${{ vars.FUNDING_THRESHOLD_ANNUALIZED || '100' }}
       LOOKBACK_HOURS: ${{ vars.LOOKBACK_HOURS || '168' }}
       MIN_VOLUME_USD: ${{ vars.MIN_VOLUME_USD || '1000' }}
-      GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash-lite-preview-06-17' }}
+      GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.1-flash-lite' }}
       GEMINI_MAX_RPM: ${{ vars.GEMINI_MAX_RPM || '10' }}
       MAX_CANDLE_FETCHES: ${{ vars.MAX_CANDLE_FETCHES || '50' }}
       CANDLE_FETCH_DELAY: ${{ vars.CANDLE_FETCH_DELAY || '0.15' }}

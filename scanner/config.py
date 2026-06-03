@@ -10,7 +10,7 @@ TELEGRAM_CHAT_ID: str = os.environ.get("TELEGRAM_CHAT_ID", "")
 # --- Gemini AI ---
 GEMINI_API_KEY: str = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_MODEL: str = os.environ.get(
-    "GEMINI_MODEL", "gemini-2.5-flash-lite-preview-06-17"
+    "GEMINI_MODEL", "gemini-3.1-flash-lite"
 )
 GEMINI_MAX_RPM: int = int(os.environ.get("GEMINI_MAX_RPM", "10"))
 

@@ -66,7 +66,7 @@ Go to your repo → **Settings** → **Secrets and variables** → **Actions**
 | `FUNDING_THRESHOLD_ANNUALIZED` | `100` | Annualized funding rate threshold (±%) |
 | `LOOKBACK_HOURS` | `168` | Hours of history for z-score (168 = 7 days) |
 | `MIN_VOLUME_USD` | `1000` | Minimum 24h volume to scan a market |
-| `GEMINI_MODEL` | `gemini-2.5-flash-lite-preview-06-17` | Gemini model identifier |
+| `GEMINI_MODEL` | `gemini-3.1-flash-lite` | Gemini model identifier |
 | `GEMINI_MAX_RPM` | `10` | Conservative RPM cap for Gemini free tier |
 | `MAX_CANDLE_FETCHES` | `50` | Max historical data fetches per run |
 
